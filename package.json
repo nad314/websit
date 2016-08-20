@@ -1,0 +1,22 @@
+{
+  "name": "websit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://nad314@github.com/nad314/websit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nad314/websit/issues"
+  },
+  "homepage": "https://github.com/nad314/websit#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
