@@ -4,11 +4,9 @@
 
 var express = require('express');
 var app = express();
-var path = require("path");
+var controller = require('./api/controller');
 
-app.get("/", function (req, res) {
-    return res.sendFile(path.join(__dirname, "public/page/", "index.html"));
-});
+require('./api/config/routes.js')(express, app, controller);
 
 app.listen(3000, function () {
     console.log('Listening to port 3000');
