@@ -24,7 +24,19 @@ gulp.task('run', ['default'], function () {
 gulp.task('css', function () {
     gulp.src('./app/style/*.scss')
         .pipe(sass({outputStyle: 'compressed'}))
+        .on('error', swallow)
         .pipe(concat('main.css'))
+        .on('error', swallow)
         .pipe(cssmin())
+        .on('error', swallow)   
         .pipe(gulp.dest('./public/css'));
 });
+
+gulp.task('watch', ['default'], function () {
+    gulp.watch('./app/style/*.scss', ['css']);
+});
+
+function swallow(error) {
+    console.log(error.toString());
+    this.emit("end");
+}
