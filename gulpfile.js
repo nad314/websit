@@ -21,6 +21,12 @@ gulp.task('run', ['default'], function () {
 	});
 });
 
+
+function swallow(error) {
+    console.log(error.toString());
+    swallow.emit('end');
+}
+
 gulp.task('css', function () {
     gulp.src('./app/style/*.scss')
         .pipe(sass({outputStyle: 'compressed'}))
@@ -28,7 +34,7 @@ gulp.task('css', function () {
         .pipe(concat('main.css'))
         .on('error', swallow)
         .pipe(cssmin())
-        .on('error', swallow)   
+        .on('error', swallow)
         .pipe(gulp.dest('./public/css'));
 });
 
@@ -36,7 +42,3 @@ gulp.task('watch', ['default'], function () {
     gulp.watch('./app/style/*.scss', ['css']);
 });
 
-function swallow(error) {
-    console.log(error.toString());
-    this.emit("end");
-}
