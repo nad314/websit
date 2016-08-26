@@ -1,7 +1,72 @@
-$bg-color: #1a1a1a;
+$bg-color: #101010;
 $tx-color: #cfcfcf;
+$bg-color-sc: rgba(1a, 1a, 1a, 0.75);
+
+$menu-padding: 60px;
 
 body {
     background-color: $bg-color;
     color: $tx-color;
+    text-align: center;
+    margin: 0;
+}
+
+ul {
+    background-color: $bg-color-sc;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: $tx-color;
+}
+
+li a:hover {
+    background-color: #1a1a1a;
+    color: $tx-color;
+}
+
+li a:visited {
+    color: $tx-color;
+}
+
+li a:active {
+    color: $tx-color;
+}
+
+div.main {
+}
+
+section {
+    border: 0px solid white;
+    height: 600px;
+    padding: 8px;
+}
+
+section.first {
+    /*background-image: url("http://localhost:3000/img/bg.png");  
+    background-repeat: repeat-x;*/
+    padding: $menu-padding 0 0 0;
+}
+
+section.second {
+    height: auto;
+}
+
+@media screen and (width=900) {
+    div.main {
+        width: 900px;
+    }
 }
