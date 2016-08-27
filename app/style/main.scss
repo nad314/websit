@@ -50,7 +50,7 @@ div.main {
 }
 
 section {
-    border: 0px solid white;
+    border: 1px solid white;
     height: 600px;
     padding: 8px;
 }
@@ -58,14 +58,15 @@ section {
 section.first {
     /*background-image: url("http://localhost:3000/img/bg.png");  
     background-repeat: repeat-x;*/
-    padding: $menu-padding 0 0 0;
+    padding: $menu-padding 100 0 100;
 }
 
 section.second {
-    height: auto;
+    height: 400px;
+    padding: 0 100 0 100;
 }
 
-@media screen and (width=900) {
+@media screen and (max-width: 900px) {
     div.main {
         width: 900px;
     }
