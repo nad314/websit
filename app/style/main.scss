@@ -4,6 +4,8 @@ $bg-color-sc: rgba(1a, 1a, 1a, 0.75);
 
 $menu-padding: 60px;
 
+* {box-sizing: border-box;}
+
 body {
     background-color: $bg-color;
     color: $tx-color;
