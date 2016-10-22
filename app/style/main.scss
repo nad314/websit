@@ -1,8 +1,11 @@
 $bg-color: #101010;
-$tx-color: #cfcfcf;
+$tx-color: white;
 $bg-color-sc: rgba(1a, 1a, 1a, 0.75);
 
 $menu-padding: 60px;
+
+$leftMargin: 12.5%;
+$colorTirq: 00bfc1;
 
 * {box-sizing: border-box;}
 
@@ -11,10 +14,13 @@ body {
     color: $tx-color;
     text-align: center;
     margin: 0;
+    font-family: 'Cabin', sans-serif;
 }
 
 ul {
-    background-color: $bg-color-sc;
+    font-size: 26px;
+    font-weight: 500;
+    background-color: $colorTirq;
     list-style-type: none;
     overflow: hidden;
     padding: 0;
@@ -28,15 +34,16 @@ li {
 }
 
 li a {
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
     text-align: center;
     text-decoration: none;
-    padding: 14px 16px;
+    padding: 46px 46px;
     color: $tx-color;
+    height: 125px;
 }
 
 li a:hover {
-    background-color: #1a1a1a;
     color: $tx-color;
 }
 
@@ -52,24 +59,252 @@ div.main {
 }
 
 section {
-    border: 1px solid white;
+    //border: 1px solid white;
     height: 600px;
-    padding: 8px;
+}
+
+div.menuleft {
+    float: left;
+    margin-top: 38px;
+    margin-left: 38px;
+}
+
+div.menuright {
+    float:right;
+}
+
+
+span {
+    display: inline-block;
+}
+
+span.s1 {
+    vertical-align: middle;
+    text-align: left;
+    font-size: 130;
+    font-weight: 600;
+    font-style: italic;
+    position: static;
+    margin-top: 618px;
 }
 
 section.first {
-    /*background-image: url("http://localhost:3000/img/bg.png");  
-    background-repeat: repeat-x;*/
-    padding: $menu-padding 100 0 100;
+    background-image: url("/img/naslovna-slika.png");
+    background-position: center;
+    height: 1421px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+span.s2p1 {
+    font-size: 120;
+    position: static;
+    align: center;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    margin-top: 70px;
+}
+span.s2p2 {
+    font-size: 59;
+    left: $leftMargin;
+    position: static;
+    text-align: left;
+    width: 70%;
+    margin-top: 70px;
+    font-weight: 600;
+}
+span.s2p3 {
+    font-size: 42;
+    left: $leftMargin;
+    position: static;
+    text-align: left;
+    width: 70%;
+    margin-top: 48px;
+}
+span.s2p4 {
+    font-size: 59;
+    margin-top: 44px;
 }
 
 section.second {
-    height: 400px;
-    padding: 0 100 0 100;
+    height: 976px;
+    background-color: $colorTirq;
 }
+
+
+section.third {
+    height: 609px;
+    background-color: white;
+    color: $colorTirq;
+}
+
+div.left {
+    margin-left: 16%; //520px / 2
+    width: 100%;
+}
+
+span.s4p1 {
+    font-size: 59;
+    font-weight: 600;
+    text-align: left;
+    position: static;
+    margin-top: 108px;
+    width: 70%;
+}
+
+span.s4p2 {
+    font-size: 59;
+    font-weight: 600;
+    text-align: left;
+    position: static;
+    margin-top: 108px;
+}
+
+span.s4p3 {
+    font-size: 36;
+    text-align: left;
+    position: static;
+    margin-top: 80px;
+    width: 54%;
+}
+
+section.fourth {
+    height: 934px;
+    background-image: url("/img/zlatna-pcela.png");
+    text-align: left;
+}
+
+span.s5p1 {
+    font-size: 120;
+    font-weight: 600;
+    font-style: italic;
+    text-align: left;
+    position: static;
+    margin-top: 108px;
+    width: 70%;
+}
+
+span.s5p2 {
+    font-size: 59;
+    font-weight: 600;
+    text-align: left;
+    position: static;
+    margin-top: 60px;
+    width: 70%;
+}
+
+span.s5p3 {
+    font-size: 34;
+    font-weight: 700;
+    text-align: left;
+    position: static;
+    width: 70%;
+}
+
+span.s5p4 {
+    font-size: 42;
+    text-align: left;
+    position: static;
+    width: 54%;
+    margin-top: 40px;
+}
+
+span.s5p5 {
+    font-size: 42;
+    text-align: left;
+    position: static;
+    width: 54%;
+    margin-top: 40px;
+}
+
+section.fifth {
+    height: 1166px;
+    background-image: url("/img/zlatni-medo.png");
+    text-align: left;
+}
+
+img.s6i1 {
+    display: block;
+    position: absolute;
+    margin: 39 34%;
+}
+
+section.sixth {
+    height: 1166px;
+    background-image: url("/img/kesten-medo.png");
+    text-align: left;
+}
+
+img.s7p1 {
+    display: block;
+    margin: 0 auto;
+}
+
+section.seventh {
+    height: 718px;
+    background-color: #231f20;
+    text-align: left;
+    padding-top: 392px;
+}
+
+
+span.s8p1 {
+    font-size: 26;
+    text-align: left;
+    position: static;
+    margin-top: 62px;
+    width: 70%;
+}
+
+span.s8p2 {
+    font-size: 22;
+    text-align: left;
+    position: static;
+    width: 70%;
+}
+
+span.s8p5 {
+    font-size: 18;
+    text-align: left;
+    position: static;
+    margin-top: 62px;
+    width: 40%;
+}
+
+span.s8p6 {
+    font-size: 18;
+    text-align: left;
+    position: static;
+    width: 40%;
+}
+
+section.eight {
+    height: 544px;
+    background-color: $colorTirq;
+    text-align: left;
+}
+
+@media screen and (min-width: 1920px) {
+    div.main{
+        width: 1920px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    span.first {
+        font-size: 90;
+    }
+}
+
 
 @media screen and (max-width: 900px) {
     div.main {
         width: 900px;
+    }
+
+    span.first {
+        font-size: 60;
     }
 }
